@@ -1,0 +1,92 @@
+
+<div class="well">
+    <script>
+    $(".open_fancybox").click(function() {
+
+        $.fancybox.open([
+          {
+            href : '../images/planters/image01.jpg',
+            title : 'My title'
+          }, {
+            href : '../images/planters/image02.jpg',
+            title : '2nd title'
+          }, {
+            href : '../images/planters/image03.jpg',
+            title : 'none'
+          },{
+            href : '../images/planters/image04.jpg',
+            title : 'none'
+          },{
+            href : '../images/planters/image05.jpg',
+            title : 'none'
+          },{
+            href : '../images/planters/image06.jpg',
+            title : 'none'
+          },{
+            href : '../images/planters/image07.jpg',
+            title : 'none'
+          },{
+            href : '../images/planters/image08.jpg',
+            title : 'none'
+          },{
+            href : '../images/planters/image09.jpg',
+            title : 'none'
+          },{
+            href : '../images/planters/image10.jpg',
+            title : 'none'
+          },{
+            href : '../images/planters/image11.jpg',
+            title : 'none'
+          },{
+            href : '../images/planters/image12.jpg',
+            title : 'none'
+          },{
+            href : '../images/planters/image13.jpg',
+            title : 'none'
+          },{
+            href : '../images/planters/image14.jpg',
+            title : 'none'
+          },{
+            href : '../images/planters/image15.jpg',
+            title : 'none'
+          },{
+            href : '../images/planters/image16.jpg',
+            title : 'none'
+          },{
+            href : '../images/planters/image17.jpg',
+            title : 'none'
+          },{
+            href : '../images/planters/image18.jpg',
+            title : 'none'
+          },{
+            href : '../images/planters/image19.jpg',
+            title : 'none'
+          },{
+            href : '../images/planters/image20.jpg',
+            title : 'none'
+          }
+        ],
+         {
+            nextEffect : 'none',
+            prevEffect : 'none',
+            padding    : 0,
+            helpers    : {
+                title : {
+                    type: 'over'
+                },
+                thumbs : {
+                    width  : 75,
+                    height : 50,
+                    source : function( item ) {
+                        return item.href.replace('_b.jpg', '_s.jpg');
+                    }
+                }
+            }
+        });
+
+        return false;
+    });
+    </script>
+    <a class="open_fancybox" href=""><img src="../images/planters/image14thumbnail.jpg" alt=""/><p class="button">this is a test</p></a>
+
+</div>

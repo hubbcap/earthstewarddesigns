@@ -1,0 +1,33 @@
+<div class="body">
+<div class="container">
+  <header>
+    {{#link-to 'index'}}<h1 class="home-button">Earth Steward Designs</h1>{{/link-to}}
+  </header>
+  {{render 'navbar'}}
+    <div class="well" id="main">
+      <div class="col-md-9">
+          {{outlet}}
+      </div>
+      <aside>
+        <div class="row">
+            <div>
+                <div class="col-md-3">
+                    <div class="well sidebar-nav">
+                        <ul class="list-group">
+                        {{#each item in controller}}
+                            <li class="list-group-item"><i class="fa fa-rss-square"></i>&nbsp;{{item}}</li>
+                        {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </aside>
+    </div>
+    <footer>
+      <div class="well">
+      <p>&copy 2014 Earth Steward Designs&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/earthsteward" class="btn btn-primary" target="_blank"><i class="icon-facebook-sign"></i></a>&nbsp;<a href="https://plus.google.com/110583325335271617471/posts" class="btn btn-danger" target="_blank"><i class="icon-google-plus-sign"></i></a></p>
+      </div>
+    </footer>
+</div>
+</div>

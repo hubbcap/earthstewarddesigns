@@ -1,0 +1,41 @@
+<script>
+$(".open_fancybox").click(function() {
+
+    $.fancybox.open([
+        {
+            href : '../images/planters/image01.jpg',
+            title : 'manual 1st title'
+        },
+        {
+            href : '../images/planters/image02.jpg',
+            title : '2nd title'
+        },
+        {
+            href : '../images/planters/image03.jpg',
+            title : '3rd title'
+        }
+    ], {
+        nextEffect : 'none',
+        prevEffect : 'none',
+        padding    : 0,
+        helpers    : {
+            title : {
+                type: 'over'
+            },
+            thumbs : {
+                width  : 75,
+                height : 50,
+                source : function( item ) {
+                    return item.href.replace('_b.jpg', '_s.jpg');
+                }
+            }
+        }
+    });
+
+    return false;
+});
+</script>
+
+<div class="well">
+<a class="open_fancybox" href="#"><img src="../images/planters/image14thumbnail.jpg" alt=""/>this is a test</a>
+</div>
