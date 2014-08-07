@@ -1,0 +1,1 @@
+Earthstewarddesigns.ApplicationAdapter = DS.FixtureAdapter;

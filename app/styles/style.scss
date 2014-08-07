@@ -1,0 +1,89 @@
+
+@import "bootstrap-sass-official/vendor/assets/stylesheets/bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville);
+
+/* Put your CSS here */
+html, body, aside{
+    margin: auto;/*Top, right, bottom, left*/
+    font:16px 'Libre Baskerville' Lucida Sans Unicode; /*font-size/lineHeight, font-family*/
+  }
+body .container, .well{
+  // padding: 10px 0 10px 0;
+  box-shadow: 1px 1px 1px 1px #000;
+  border: 1px 1px 1px 1px #000;
+}
+body {
+  background: url('/images/background.png')
+  // background: -webkit-linear-gradient(bottom,rgba(51,102,0,0),rgba(0,102,0,.5)); /*Safari 5.1-6*/
+  // background: -o-linear-gradient(bottom,rgba(51,102,0,0),rgba(0,0,102,.5)); /*Opera 11.1-12*/
+  // background: -moz-linear-gradient(bottom,rgba(51,102,0,0),rgba(0,102,0,.5)); /*Fx 3.6-15*/
+  // background: linear-gradient(to bottom, rgba(51,102,0,0), rgba(0,102,0,.5)); /*Standard*/
+}
+body p {
+  text-align:justify;
+  text-justify: inter-word;
+}
+.aboutImage {
+  float: left;
+  margin-right: 10px;
+}
+.blogImages {
+  float: right;
+  margin-left: 10px;
+}
+/*hsla(101, 100.0000%, 96.2103%, 1.0000)*/
+.group:before, .group:after{
+  content:"";
+  display: table;
+}
+.group:after{
+  clear:both;
+}
+.group{
+  zoom: 1; /* IE6&7 */
+}
+p{
+  color: rgba(0, 0, 0, 0.75);
+}
+.submit{
+  border: 4px black;
+  box-shadow: 2px 2px 2px #000;
+  background: #fff;
+}
+.submit:hover{
+  background:#aaa5aa;
+}
+.container{
+  // border: 10px black;
+  margin: 15px auto 0 auto;
+}
+header a:link{
+  color: black;
+}
+@media handheld, only screen and (min-width: 1024px){
+footer {
+  position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  clear:both;
+  padding-top:20px;
+}}
+.nativeHeader {
+  text-align: center;
+}
+.dropdowns {
+  padding: 20px 20px 600px;
+}
+.headabout{
+  text-align:left;
+}
+// body {background: #f7f7f7; font: 100%/1.375 georgia, serif;padding: 20px 40px;}
+// form div {margin-bottom: 10px;}
+// .content {width: 40%; margin: 0 auto;}
+// h1 {margin: 0 0 20px 0; font-size: 175%; font-family: calibri, arial, sans-serif;}
+// label {margin-bottom: 2px;}
+// input[type="text"], input[type="email"], textarea {font-size: 0.75em; width: 98%; font-family: arial; border: 1px solid #ebebeb; padding: 4px; display: block;}
+// input[type="radio"] {margin: 0 5px 0 0;}
+// textarea {overflow: auto;}
+// .hide {display: none;}
+/*@fa-font-path:   "../fonts/";*/
